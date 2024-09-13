@@ -7,10 +7,9 @@ import { SlLocationPin } from "react-icons/sl";
 import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
 import { stateProps } from "../../../type";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn } from "next-auth/react";
 import { useEffect } from "react";
 import { addUser } from "@/store/nextSlice";
-// import { SessionProvider } from "next-auth/react";
 
 const Header = () => {
   const { data: session } = useSession();
@@ -19,7 +18,6 @@ const Header = () => {
   );
 
   const dispatch = useDispatch();
-  console.log(userInfo);
   useEffect(() => {
     if (session) {
       dispatch(
@@ -85,7 +83,7 @@ const Header = () => {
             border-transparent hover:border-white cursor-pointer duration-300 h-[70%]">
             <p>Hello, sign in</p>
             <p className="text-white font-bold flex">
-              Account & Lists{" "}
+              Account & Lists
               <span>
                 <BiCaretDown />
               </span>

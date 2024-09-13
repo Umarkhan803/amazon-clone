@@ -2,14 +2,14 @@ import React from "react";
 import { LuMenu } from "react-icons/lu";
 import { useSelector, useDispatch } from "react-redux";
 import { stateProps } from "../../../type";
-// import { signOut } from "next-auth/react";
+import { signOut } from "next-auth/react";
 import { removeUser } from "@/store/nextSlice";
 
 const HeaderBottom = () => {
   const { userInfo } = useSelector((state: stateProps) => state.next);
   const dispatch = useDispatch();
   const handleSignOut = () => {
-    // signOut();
+    signOut();
     dispatch(removeUser());
   };
   return (
