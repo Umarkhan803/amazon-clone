@@ -11,7 +11,7 @@ const Footer = () => {
         <a
           className="hover:text-white hoverunderline decoration-[1px]
             cursor-pointer duration-250"
-          href="https://govardhan-portfolio.vercel.app/"
+          href="https://portfoliouk803.netlify.app/"
           target="_blank">
           @Govardhan
         </a>
