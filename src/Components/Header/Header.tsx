@@ -7,7 +7,7 @@ import { SlLocationPin } from "react-icons/sl";
 import Link from "next/link";
 import { useSelector, useDispatch } from "react-redux";
 import { stateProps } from "../../../type";
-// import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn, signOut } from "next-auth/react";
 import { useEffect } from "react";
 import { addUser } from "@/store/nextSlice";
 // import { SessionProvider } from "next-auth/react";
@@ -17,7 +17,7 @@ const Header = () => {
   const { productData, favoriteData, userInfo } = useSelector(
     (state: stateProps) => state.next
   );
-  s;
+
   const dispatch = useDispatch();
   console.log(userInfo);
   useEffect(() => {

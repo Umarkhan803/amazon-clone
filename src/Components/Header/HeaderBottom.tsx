@@ -76,6 +76,11 @@ const HeaderBottom = () => {
         className="hidden md:inline-flex flex items-center gap-1 h-8 px-2 border border-transparent
         hover:border-white cursor-pointer duration-300">
         Amazon Pay
+      </p>{" "}
+      <p
+        className="hidden md:inline-flex flex items-center gap-1 h-8 px-2 border border-transparent
+        hover:border-white cursor-pointer duration-300">
+        Kids
       </p>
       {userInfo && (
         <button

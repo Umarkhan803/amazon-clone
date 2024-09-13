@@ -1,8 +1,5 @@
-import HeaderBottom from "@/components/header/HeaderBottom";
-import Header from "@/components/header/Header";
-import Footer from "@/components/Footer";
-import Banner from "@/components/Banner";
-import Products from "@/components/Products";
+import Banner from "@/Components/Banner";
+import Products from "@/Components/Products";
 import { ProductProps } from "../../type";
 
 interface Props {
