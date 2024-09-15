@@ -13,7 +13,7 @@ const Footer = () => {
             cursor-pointer duration-250"
           href="https://portfoliouk803.netlify.app/"
           target="_blank">
-          @Govardhan
+          @Umar Khan
         </a>
       </p>
     </div>
