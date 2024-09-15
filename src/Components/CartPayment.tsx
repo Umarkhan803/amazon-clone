@@ -41,6 +41,7 @@ const CartPayment = () => {
     const checkoutSession = await response.json();
 
     // Redirecting user/customer to Stripe Checkout
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const result: any = await stripe?.redirectToCheckout({
       sessionId: checkoutSession.id,
     });
