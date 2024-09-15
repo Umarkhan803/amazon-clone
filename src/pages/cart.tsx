@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { StoreProduct, stateProps } from "../../type";
 import CartProduct from "@/Components/CartProduct";
-// import ResetCart from "@/components/ResetCart";
+import ResetCart from "@/Components/ResetCart";
 import Link from "next/link";
 import CartPayment from "@/Components/CartPayment";
 
@@ -28,7 +28,7 @@ const CartPage = () => {
                 </div>
               ))}
 
-              {/* <ResetCart /> */}
+              <ResetCart />
             </div>
           </div>
 

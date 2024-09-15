@@ -86,7 +86,7 @@ const HeaderBottom = () => {
         <button
           onClick={handleSignOut}
           className="hidden md:inline-flex flex items-center gap-1 h-8 px-2 border border-transparent
-        hover:border-red-600 hover:text-red-500 text-amazon_yellow cursor-pointer duration-300">
+        hover:border-amazon_yellow over:text-amazon_yellow text-amazon_yellow cursor-pointer duration-300">
           Sign Out
         </button>
       )}
